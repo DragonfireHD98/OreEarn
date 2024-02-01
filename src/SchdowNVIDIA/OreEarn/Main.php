@@ -41,8 +41,8 @@ class Main extends PluginBase
         $this->cfgChecker();
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
         $this->saveDefaultConfig();
-        if($this->getServer()->getPluginManager()->getPlugin("BedrockEconomyAPI") === null) {
-            $this->getLogger()->error("OreEarn requires the plugin \"BedrockEconomyAPI\" to work!");
+        if($this->getServer()->getPluginManager()->getPlugin("BedrockEconomy") === null) {
+            $this->getLogger()->error("OreEarn requires the plugin \"BedrockEconomy\" to work!");
             $this->getServer()->getPluginManager()->disablePlugin($this);
         }
     }
