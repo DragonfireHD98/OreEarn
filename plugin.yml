@@ -1,9 +1,10 @@
 name: OreEarn
 version: 1.8.2
 main: SchdowNVIDIA\OreEarn\Main
-api: 3.0.0
+api: 5.0.0
 authors:
   -  SchdowNVIDIA
+  -  DragonfireHD98
 description: "OreEarn plugin, earn money easily by mining ores."
 depend:
-  - EconomyAPI
+  - BedrockEconomy
