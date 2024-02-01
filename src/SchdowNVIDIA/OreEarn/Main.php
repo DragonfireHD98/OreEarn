@@ -34,7 +34,7 @@ class Main extends PluginBase
 {
 
 
-    public function onEnable()
+	public function onEnable(){
     {
         @mkdir($this->getDataFolder());
         $this->saveResource("messages.yml");
