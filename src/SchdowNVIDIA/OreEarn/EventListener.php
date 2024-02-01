@@ -90,7 +90,7 @@ class EventListener implements Listener {
             $lucklevel = 1;
         }
 
-        $economyApi = EconomyAPI::getInstance();
+        $economyApi = BEDROCKECONOMYAPI::getInstance();
 
         // Stone
         if($id == Block::STONE) {
