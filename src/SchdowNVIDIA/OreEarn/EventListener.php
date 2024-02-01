@@ -27,6 +27,7 @@ declare(strict_types = 1);
 
 namespace SchdowNVIDIA\OreEarn;
 
+use cooldogedev\BedrockEconomy\api\BedrockEconomyAPI;
 use cooldogedev\BedrockEconomy\api\legacy\ClosureContext;
 use pocketmine\block\Block;
 use pocketmine\event\block\BlockBreakEvent;
