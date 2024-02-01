@@ -48,6 +48,7 @@ class Main extends PluginBase
     }
 
         public function check(){
+    {
         $cfgVersion = 4;
         $msgVersion = 1;
         if(($this->getConfig()->get("cfg-version")) < $cfgVersion || !($this->getConfig()->exists("cfg-version"))) {
