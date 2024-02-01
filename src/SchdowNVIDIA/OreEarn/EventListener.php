@@ -90,7 +90,7 @@ class EventListener implements Listener {
             $lucklevel = 1;
         }
 
-        $economyApi = BEDROCKECONOMYAPI::getInstance();
+        $economyApi = BedrockEconomyAPI::getInstance();
 
         // Stone
         if($id == Block::STONE) {
