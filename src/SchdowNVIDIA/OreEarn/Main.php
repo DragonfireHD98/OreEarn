@@ -1,4 +1,4 @@
-<?php
+r<?php
 
 /*
       ___           _____
@@ -41,8 +41,8 @@ class Main extends PluginBase
         $this->cfgChecker();
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
         $this->saveDefaultConfig();
-        if($this->getServer()->getPluginManager()->getPlugin("EconomyAPI") === null) {
-            $this->getLogger()->error("OreEarn requires the plugin \"EconomyAPI\" to work!");
+        if($this->getServer()->getPluginManager()->getPlugin("BedrockEconomyAPI") === null) {
+            $this->getLogger()->error("OreEarn requires the plugin \"BedrockEconomyAPI\" to work!");
             $this->getServer()->getPluginManager()->disablePlugin($this);
         }
     }
