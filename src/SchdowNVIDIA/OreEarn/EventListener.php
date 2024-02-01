@@ -103,7 +103,7 @@ class EventListener implements Listener {
                     $event->setDrops(array(Item::get(4), Item::get(452, 0, rand(0, 1))));
                 }
             }
-            $economyApi->addBalance($name, $earn);
+            $economyApi->addToPlayerBalance($name, $earn);
         }
 
         // Coal Ore
@@ -114,7 +114,7 @@ class EventListener implements Listener {
             } else {
                 $event->setDrops([]);
             }
-            $economyApi->addBalance($name, $earn);
+            $economyApi->addToPlayerBalance($name, $earn);
             if($this->plugin->getConfig()->get("enablePopup") === false) {
                 return true;
             }
@@ -129,7 +129,7 @@ class EventListener implements Listener {
             } else {
                 $event->setDrops([]);
             }
-            $economyApi->addBalance($name, $earn);
+            $economyApi->addToPlayerBalance($name, $earn);
             if($this->plugin->getConfig()->get("enablePopup") === false) {
                 return true;
             }
@@ -144,7 +144,7 @@ class EventListener implements Listener {
             } else {
                 $event->setDrops([]);
             }
-            $economyApi->addBalance($name, $earn);
+            $economyApi->addToPlayerBalance($name, $earn);
             $player->sendPopup($this->stringConvert($messages->get("lapisEarn"), $earn));
         }
 
@@ -156,7 +156,7 @@ class EventListener implements Listener {
             } else {
                 $event->setDrops([]);
             }
-            $economyApi->addBalance($name, $earn);
+            $economyApi->addToPlayerBalance($name, $earn);
             if($this->plugin->getConfig()->get("enablePopup") === false) {
                 return true;
             }
@@ -171,7 +171,7 @@ class EventListener implements Listener {
             } else {
                 $event->setDrops([]);
             }
-            $economyApi->addBalance($name, $earn);
+            $economyApi->addToPlayerBalance($name, $earn);
             if($this->plugin->getConfig()->get("enablePopup") === false) {
                 return true;
             }
@@ -187,7 +187,7 @@ class EventListener implements Listener {
                 $event->setDrops([]);
             }
             $event->setXpDropAmount(2);
-            $economyApi->addBalance($name, $earn);
+            $economyApi->addToPlayerBalance($name, $earn);
             if($this->plugin->getConfig()->get("enablePopup") === false) {
                 return true;
             }
@@ -203,7 +203,7 @@ class EventListener implements Listener {
                 $event->setDrops([]);
             }
             $event->setXpDropAmount(5);
-            $economyApi->addBalance($name, $earn);
+            $economyApi->addToPlayerBalance($name, $earn);
             if($this->plugin->getConfig()->get("enablePopup") === false) {
                 return true;
             }
@@ -218,7 +218,7 @@ class EventListener implements Listener {
             } else {
                 $event->setDrops([]);
             }
-            $economyApi->addBalance($name, $earn);
+            $economyApi->addToPlayerBalance($name, $earn);
             if($this->plugin->getConfig()->get("enablePopup") === false) {
                 return true;
             }
